@@ -10,7 +10,7 @@ int fibonacci(int n) {
     }
     else{
     
-        return (n-1) + (n-2);
+        return fibonacci(n-1) + fibonacci(n-2);
 
     }
     
