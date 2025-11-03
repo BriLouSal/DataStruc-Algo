@@ -4,7 +4,7 @@
 using namespace std;
 
 
-
+// Time Complexity: O(log(n))
 
 int fastfast(long long n, int a, int MOD){
     long long result = 1;
