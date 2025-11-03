@@ -3,6 +3,11 @@
 #include <vector>
 using namespace std;
 
+
+
+
+
+
 int prime(int a){
 
     if (a % 2 == 0){
