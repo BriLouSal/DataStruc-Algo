@@ -4,22 +4,21 @@
 using namespace std;
 
 
-// Key Observation:
-
-//  a^m 
 
 
 int fastfast(long long n, int a, int MOD){
-    int answers = 1;
+    long long result = 1;
+    long long base = a % MOD;
+
 
     while (n >= 1){
         if (n % 2 == 0){
-        a = (a * a) % MOD;
+        result = (result * base) % MOD;
         n/2;
 
         }
         else{
-            a = (a * a) % MOD;
+            base = (base * base) % MOD;
             n--;
         }
 
@@ -27,7 +26,7 @@ int fastfast(long long n, int a, int MOD){
 
 
 
-    return a;
+    return result;
 }
 
 
