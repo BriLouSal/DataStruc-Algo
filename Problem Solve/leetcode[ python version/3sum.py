@@ -6,7 +6,6 @@ class Solution:
         list_num = []
         nums.sort()
         for x in range(len(nums)):
-            # Pass if duplicate (DISTINCT TRIPLETS!)
             if x > 0 and nums[x] == nums[x-1]:
                 continue
             left = x + 1
@@ -19,7 +18,7 @@ class Solution:
                     left += 1
                     right -= 1
 
-                    # skip duplicates, DISTINCT TRIPLETS
+                    # skip duplicates
                     while left < right and nums[left] == nums[left-1]:
                         left += 1
 
@@ -28,4 +27,3 @@ class Solution:
                 else:
                     right -= 1
         return list_num
-# Solution Log O(n^2)
