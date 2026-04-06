@@ -31,3 +31,19 @@ node3.next = node4
 node4.next = node5
 
 traverseAndPrint(node1)
+
+
+class LinkedList:
+    def __init__(self, value):
+        self.head = Node(value)
+        self.tail = self.head
+    def append(self, value):
+        newNode = Node(value)
+        self.tail.next = newNode
+        self.tail = newNode
+    def traverseAndPrint(self):
+        currentNode = self.head
+        while currentNode:
+            print(currentNode.data, end=" -> ")
+            currentNode = currentNode.next
+        print("null")
