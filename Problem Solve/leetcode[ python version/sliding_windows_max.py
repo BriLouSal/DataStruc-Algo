@@ -31,3 +31,5 @@ class Solution:
             max_list = max(new_list)
             list_of_max.append(max_list)
         return list_of_max
+    
+# Time complexity of O(n+k) and space complexity of O(n-k+1) which is not good enough for the time limit, we need to optimize it.
