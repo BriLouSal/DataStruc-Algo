@@ -18,13 +18,18 @@ class Solution:
                 current = current.next
         result.sort()
         # Now we convert it back to a linked List
-        new_head = ListNode(0)
-        curr = new_head
+        if not result:
+            return None
+
+        # Set them as None in case we have empty linked list
+        new_head = None
+        curr = None
         for i in result:
-            curr.next = ListNode(i)
-            curr = curr.next
-            
-        return new_head.next
-
-
+            if new_head is None:
+                new_head = ListNode(i)
+                curr = new_head
+            else:
+                curr.next = ListNode(i)
+                curr = curr.next
+        return new_head
 
