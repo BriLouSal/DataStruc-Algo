@@ -20,7 +20,6 @@ class Solution:
         # Now we convert it back to a linked List
         if not result:
             return None
-
         # Set them as None in case we have empty linked list
         new_head = None
         curr = None
