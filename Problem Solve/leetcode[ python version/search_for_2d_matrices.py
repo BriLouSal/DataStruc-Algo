@@ -20,6 +20,7 @@ class Solution(object):
                 break
 
             else: 
-                continue
+  
                 visited += 1
+                continue
         return does_exist
