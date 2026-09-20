@@ -11,6 +11,7 @@ class Solution(object):
         # Alice goal is to maximize and Bob is to minimize.
         # We have to chose an interger x > 1, and remove the most leftmost x stones from the row
         # so the furthest lef twe can
+        
         dp = [0] * len(stones)
         # This is our furthest left
         dp[0] = stones[0]
